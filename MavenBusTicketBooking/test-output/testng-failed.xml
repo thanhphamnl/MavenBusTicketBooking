@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeTests1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.project.testcases.BusTicketBookingTestCaseGrid_1">
+        <methods>
+          <include name="Launch"/>
+          <include name="CloseBrowser"/>
+          <include name="RedBus"/>
+          <include name="SearchBus" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.project.testcases.BusTicketBookingTestCaseGrid_1 -->
+    </classes>
+  </test> <!-- ChromeTests1(failed) -->
+  <test thread-count="5" parallel="tests" name="FirefoxTests1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.project.testcases.BusTicketBookingTestCaseGrid_2">
+        <methods>
+          <include name="SearchBus" invocation-numbers="0"/>
+          <include name="Launch"/>
+          <include name="CloseBrowser"/>
+          <include name="RedBus"/>
+        </methods>
+      </class> <!-- com.project.testcases.BusTicketBookingTestCaseGrid_2 -->
+    </classes>
+  </test> <!-- FirefoxTests1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
